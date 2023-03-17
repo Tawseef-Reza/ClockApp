@@ -1,0 +1,102 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-narrow;
+}
+
+
+
+@font-face {
+    font-family: sans-narrow;
+    src: url(./PTSansNarrow-Regular.ttf);
+}
+
+
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: navajowhite;
+    flex-direction: column;
+/*transform: translate(-50%, -50%);*/
+}
+
+#AMorPM {
+    font-size: 5vh;
+    color: #d48132;
+    padding: 1.5vh;
+    margin-bottom: 3vh;
+    border-radius: 0.5vh;
+    border: 0.5vh solid brown;
+    background-color: black;
+
+}
+
+.static-indicator:nth-of-type(15n+1) {
+   
+    font-size: 5.7vh;
+    font-weight: 400;
+ }
+
+ .static-indicator:nth-of-type(5n+1) {
+    font-weight: bold;
+    font-size: 5.5vh;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    color: #d48132;
+
+}
+.static-indicator {
+    font-weight: bold;
+    font-size: 2vh;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    color: #d48132;
+ 
+}
+
+.clock {
+    /* top: 50%;
+    left: 50%;
+     */
+    background-color: black;
+    position:relative;
+    width: 70vh;
+    height: 70vh;
+    border-radius: 50%;
+    border-width: 1vh;
+    border-color: #db9c62;
+    border-style: solid;
+}
+
+#clock-hr, #clock-min, #clock-sec {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    background-color: #d48132;
+    transform: translate(-50%, -100%);
+}
+#clock-hr {
+   width: 1vh;
+   height: 20%;
+  
+}
+
+#clock-min {
+  width: 0.5vh;
+  height:35%;
+ 
+}
+
+#clock-sec {
+  width: 0.3vh;
+  height: 47%;
+
+}
