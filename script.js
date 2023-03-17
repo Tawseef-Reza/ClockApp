@@ -29,11 +29,13 @@ setInterval(() => {
     
     if (hrs >= 12) {
         ampm = "PM";
-        hrs-=12;
+        
     }
     else {
         ampm = "AM";
     }
+    hrs = hrs > 12 ? hrs - 12 : hrs;
+    hrs = hrs == 0 ? 12 : hrs;
     printableHrs = hrs <= 9 ? "0" + hrs : hrs;
     printableMins = mins <= 9 ? "0" + mins : mins;
     printableSecs = secs <= 9 ? "0" + secs : secs;
